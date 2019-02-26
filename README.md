@@ -80,3 +80,6 @@ Console.WriteLine(Stateless.Graph.UmlDotGraph.Format(machine.GetInfo()));
 Zostanie wygenerowany graf w formacie [ DOT Graph](https://en.wikipedia.org/wiki/DOT_(graph_description_language)), który można wyświetlić na stronie:
 
 http://www.webgraphviz.com
+
+![Graph](graph.png)
+
