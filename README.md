@@ -51,6 +51,12 @@ Jeśli przejście nie zostało zdefiniowane pojawi się Exception.
 machine.Fire(Trigger.Push)
 ~~~
 
+## Pobranie bieżącego stanu
+~~~ csharp
+machine.State
+~~~ 
+
+
 ## Sprawdzenie wyzwalacza
 ~~~ csharp
 machine.CanFire(Trigger.Push)
@@ -61,6 +67,9 @@ machine.CanFire(Trigger.Push)
  machine.OnTransitioned(t=> Console.WriteLine($"{t.Source} -> {t.Destination}"));
 ~~~        
             
+## Wizualizacja grafu
+~~~ csharp
+Console.WriteLine(Stateless.Graph.UmlDotGraph.Format(machine.GetInfo()));
+~~~
 
-- Wizualizacja grafu
 http://www.webgraphviz.com
