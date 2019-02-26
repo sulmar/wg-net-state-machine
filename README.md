@@ -72,13 +72,30 @@ machine.CanFire(Trigger.Push)
  machine.OnTransitioned(t=> Console.WriteLine($"{t.Source} -> {t.Destination}"));
 ~~~        
             
-## Wizualizacja grafu
+## Wygenerowanie grafu
 ~~~ csharp
 Console.WriteLine(Stateless.Graph.UmlDotGraph.Format(machine.GetInfo()));
 ~~~
 
-Zostanie wygenerowany graf w formacie [ DOT Graph](https://en.wikipedia.org/wiki/DOT_(graph_description_language)), który można wyświetlić na stronie:
+Zostanie wygenerowany graf w formacie [ DOT Graph](https://en.wikipedia.org/wiki/DOT_(graph_description_language)), 
 
+~~~
+digraph {
+compound=true;
+node [shape=Mrecord]
+rankdir="LR"
+Off [label="Off"];
+On [label="On|entry / Powitanie"];
+Blinking [label="Blinking|exit / Podziękowanie"];
+
+Off -> On [style="solid", label="Push"];
+On -> Blinking [style="solid", label="Push"];
+Blinking -> Off [style="solid", label="Push"];
+}
+~~~
+
+## Wizualizacja grafu
+Diagram można wyświetlić na stronie:
 http://www.webgraphviz.com
 
 ![Graph](graph.png)
