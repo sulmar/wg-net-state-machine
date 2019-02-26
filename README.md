@@ -3,6 +3,8 @@
 Kod źródłowy pochodzący z mojego wystąpienia 21.02.2019 na 123 spotkaniu **Warszawskiej Grupy .NET** (WG.NET). 
 
 
+![Image of Marcin](wgnet.png)
+
 ## Instalacja biblioteki
 
 ~~~ bash
