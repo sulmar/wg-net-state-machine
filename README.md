@@ -53,7 +53,7 @@ machine.Fire(Trigger.Push)
 
 ## Pobranie bieżącego stanu
 ~~~ csharp
-machine.State
+Console.WriteLine(machine.State)
 ~~~ 
 
 
