@@ -11,7 +11,7 @@ dotnet add package Stateless --version 4.2.1
 
 
 ## Definicja maszyny stanów
-
+Określamy typ stanu (State), typ wyzwalacza (Trigger) oraz stan początkowy.
 ~~~ csharp
 StateMachine<Status, Trigger> machine = new StateMachine<Status, Trigger>(Status.Off);
 ~~~
