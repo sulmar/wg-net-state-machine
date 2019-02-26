@@ -72,4 +72,6 @@ machine.CanFire(Trigger.Push)
 Console.WriteLine(Stateless.Graph.UmlDotGraph.Format(machine.GetInfo()));
 ~~~
 
+Zostanie wygenerowany graf w formacie DOT Graph, który można wyświetlić na stronie:
+
 http://www.webgraphviz.com
