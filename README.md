@@ -38,6 +38,8 @@ StateMachine<Status, Trigger> machine = new StateMachine<Status, Trigger>(Status
             machine.Configure(Status.Blinking)
                 .Permit(Trigger.Push, Status.Off)
                 .OnExit(()=>SendSms("Dziękuję za wyłączenie światła."), "Podziękowanie
+~~~
+
 
 - Wizualizacja grafu
 http://www.webgraphviz.com
