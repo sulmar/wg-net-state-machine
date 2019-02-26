@@ -1,7 +1,6 @@
 # Maszyna stanu w praktyce
 
-Kod źródłowy pochodzący z mojego wystąpienia 21.02.2019 na 123 spotkaniu **Warszawskiej Grupy .NET** (WG.NET). 
-
+Kod źródłowy pochodzący z mojego wystąpienia 21.02.2019 na 123 spotkaniu [**Warszawskiej Grupy .NET (WG.NET)**](http://www.wg.net.pl)
 
 ![Image of Marcin](wgnet.jpg)
 
