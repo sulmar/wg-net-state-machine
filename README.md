@@ -39,7 +39,7 @@ Za pomocą metody _Configure()_ oraz _Permit()_ definiujemy dopuszczalne przejś
 
             machine.Configure(Status.Blinking)
                 .Permit(Trigger.Push, Status.Off)
-                .OnExit(()=>SendSms("Dziękuję za wyłączenie światła."), "Podziękowanie
+                .OnExit(()=>SendSms("Dziękuję za wyłączenie światła."), "Podziękowanie");
 ~~~
 
 
