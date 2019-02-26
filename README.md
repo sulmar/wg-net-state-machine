@@ -42,6 +42,11 @@ Za pomocą metody _Configure()_ oraz _Permit()_ definiujemy dopuszczalne przejś
                 .OnExit(()=>SendSms("Dziękuję za wyłączenie światła."), "Podziękowanie");
 ~~~
 
+## Śledzenie maszyny stanów   
+~~~ csharp
+ machine.OnTransitioned(t=> Console.WriteLine($"{t.Source} -> {t.Destination}"));
+~~~        
+            
 
 - Wizualizacja grafu
 http://www.webgraphviz.com
