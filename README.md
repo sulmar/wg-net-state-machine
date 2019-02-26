@@ -42,6 +42,20 @@ Za pomocą metody _Configure()_ oraz _Permit()_ definiujemy dopuszczalne przejś
                 .OnExit(()=>SendSms("Dziękuję za wyłączenie światła."), "Podziękowanie");
 ~~~
 
+
+## Uruchomienie wyzwalacza
+Na podstawie wcześniej zdefiniowanej konfiguracji nastąpi przejście do kolejnego stanu.
+Jeśli przejście nie zostało zdefiniowane pojawi się Exception.
+
+~~~ csharp
+machine.Fire(Trigger.Push)
+~~~
+
+## Sprawdzenie wyzwalacza
+~~~ csharp
+machine.CanFire(Trigger.Push)
+~~~
+
 ## Śledzenie maszyny stanów   
 ~~~ csharp
  machine.OnTransitioned(t=> Console.WriteLine($"{t.Source} -> {t.Destination}"));
