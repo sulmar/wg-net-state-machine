@@ -18,6 +18,8 @@ StateMachine<Status, Trigger> machine = new StateMachine<Status, Trigger>(Status
 
 
 ## Konfiguracja przejść
+Za pomocą metody _Configure()_ oraz _Permit()_ definiujemy dopuszczalne przejścia. Dodatkowo za pomocą metod _OnEntry()_ i _OnExit()_ możemy zdefiniować dodatkowe akcje, które mają być uruchamianie przy wejściu lub po wyjściu ze stanu.
+
 ~~~ csharp
  machine.Configure(Status.Off)   
                 .Permit(Trigger.Push, Status.On);
