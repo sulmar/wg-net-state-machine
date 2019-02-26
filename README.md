@@ -5,6 +5,9 @@ Kod źródłowy pochodzący z mojego wystąpienia 21.02.2019 na 123 spotkaniu **
 
 ![Image of Marcin](wgnet.jpg)
 
+## Wymagania
+- .NET Core 2.2
+
 ## Instalacja biblioteki
 
 ~~~ bash
